@@ -6,11 +6,11 @@ version: 0.1.0
 appVersion: "1.16.0"
 dependencies:
   - name: cert-manager
-    version: 1.5.3
+    version: v1.19.4
     repository: file://../cert-manager
   - name: trust-manager
-    version: 0.1.0
+    version: v0.21.1
     repository: file://../trust-manager
   - name: kyverno
-    version: 2.0.0
+    version: 3.7.1
     repository: file://../kyverno
