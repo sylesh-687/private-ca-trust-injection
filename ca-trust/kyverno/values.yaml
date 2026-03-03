@@ -117,16 +117,16 @@ crds:
 
     # -- Install CRDs in group `policies.kyverno.io`
     policies:
-      validatingpolicies: true
-      policyexceptions: true
-      imagevalidatingpolicies: true
-      namespacedimagevalidatingpolicies: true
-      mutatingpolicies: true
-      namespacedmutatingpolicies: true
-      generatingpolicies: true
-      deletingpolicies: true
-      namespaceddeletingpolicies: true
-      namespacedvalidatingpolicies: true
+      validatingpolicies: false
+      policyexceptions: false
+      imagevalidatingpolicies: false
+      namespacedimagevalidatingpolicies: false
+      mutatingpolicies: false
+      namespacedmutatingpolicies: false
+      generatingpolicies: false
+      deletingpolicies: false
+      namespaceddeletingpolicies: false
+      namespacedvalidatingpolicies: false
 
     # -- Install CRDs in group `reports.kyverno.io`
     reports:
