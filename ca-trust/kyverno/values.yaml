@@ -1302,7 +1302,7 @@ backgroundController:
   featuresOverride: {}
 
   # -- Enable background controller.
-  enabled: true
+  enabled: false
 
   rbac:
     # -- Create RBAC resources
@@ -1639,7 +1639,7 @@ cleanupController:
   featuresOverride: {}
 
   # -- Enable cleanup controller.
-  enabled: true
+  enabled: false
 
   rbac:
     # -- Create RBAC resources
@@ -2013,7 +2013,7 @@ reportsController:
   featuresOverride: {}
 
   # -- Enable reports controller.
-  enabled: true
+  enabled: false
 
   rbac:
     # -- Create RBAC resources
