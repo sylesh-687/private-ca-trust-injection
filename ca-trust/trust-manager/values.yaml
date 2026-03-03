@@ -214,7 +214,7 @@ app:
   trust:
     # The namespace used as the trust source. Note that the namespace _must_ exist
     # before installing trust-manager.
-    namespace: cert-manager
+    namespace: default
   # List of target namespaces that trust-manager can write to. By default, trust-manager can write targets in any namespace.
   # +docs:property
   # targetNamespaces: ["ns-1", "ns-2"]
