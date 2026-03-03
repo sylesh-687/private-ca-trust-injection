@@ -29,10 +29,6 @@ spec:
         - /metadata/annotations
         - /metadata/labels
         - /status
-      - group: rbac.authorization.k8s.io
-        kind: ClusterRole
-        jsonPointers:
-        - /rules
       syncPolicy:
         automated:
           prune: true
