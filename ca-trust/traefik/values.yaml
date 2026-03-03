@@ -1187,7 +1187,7 @@ extraObjects: []
 
 # -- This field overrides the default Release Namespace for Helm.
 # It will not affect optional CRDs such as `ServiceMonitor` and `PrometheusRules`
-namespaceOverride: ""
+namespaceOverride: default
 
 # -- This field overrides the default app.kubernetes.io/instance label for all Objects.
 instanceLabelOverride: ""
