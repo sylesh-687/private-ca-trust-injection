@@ -9,7 +9,7 @@ spec:
       repoURL: https://github.com/sylesh-687/private-ca-trust-injection.git
       revision: HEAD
       directories:
-      - path: ca-trust
+      - path: ca-trust/*
   template:
     metadata:
       name: '{{path.basename}}'
@@ -28,3 +28,4 @@ spec:
           selfHeal: true
         syncOptions:
         - CreateNamespace=true
+        - ServerSideApply=true 
