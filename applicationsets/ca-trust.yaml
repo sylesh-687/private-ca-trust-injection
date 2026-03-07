@@ -29,6 +29,7 @@ spec:
         - /metadata/annotations
         - /metadata/labels
         - /status
+        - /spec/preserveUnknownFields
       syncPolicy:
         automated:
           prune: true
