@@ -1,0 +1,41 @@
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: selfsigned-issuer
+spec:
+  selfSigned: {}
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: selfsigned-cert
+spec:
+  isCA: true
+  commonName: selfsigned-cert
+  secretName: selfsigned-cert-secret
+  issuerRef:
+    name: selfsigned-issuer
+    kind: ClusterIssuer
+    group: cert-manager.io
+---
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: cert-issuer
+spec:
+  ca:
+    secretName: selfsigned-cert-secret
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: cert-for-nginx
+spec:
+  commonName: "*.devops.poc"
+  dnsNames:
+  - "*.devops.poc"
+  secretName: cert-for-nginx-secret
+  issuerRef:
+    name: cert-issuer
+    kind: Issuer
+    group: cert-manager.io
