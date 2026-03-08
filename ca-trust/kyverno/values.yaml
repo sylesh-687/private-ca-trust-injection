@@ -1302,7 +1302,7 @@ backgroundController:
   featuresOverride: {}
 
   # -- Enable background controller.
-  enabled: false
+  enabled: true
 
   rbac:
     # -- Create RBAC resources
