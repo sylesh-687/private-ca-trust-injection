@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: curl-pod
+  labels:
+    inject-ca: "true"
+spec:
+  containers:
+  - name: curl
+    image: curlimages/curl:8.5.0
+    command: ["sleep","3600"]
+  hostAliases:
+  - ip: "192.168.0.240"
+    hostnames:
+    - "nginx.devops.poc"
